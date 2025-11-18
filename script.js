@@ -152,3 +152,87 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 // --- END OF FILE script.js ---
+
+// SEND FORM TO ME (SPEEDRKK@GMAIL.COM)
+// Simple contact form handler: attempts EmailJS if configured, otherwise falls back to mailto.
+// Place this code at the end of your script file (where the form placeholder was).
+(() => {
+    const TO_EMAIL = 'speedrkk@gmail.com'; // fallback recipient
+    const EMAILJS_SERVICE_ID = 'YOUR_EMAILJS_SERVICE_ID'; // set if using EmailJS
+    const EMAILJS_TEMPLATE_ID = 'YOUR_EMAILJS_TEMPLATE_ID';
+    const EMAILJS_USER_ID = 'YOUR_EMAILJS_USER_ID'; // public key (optional depending on integration)
+
+    const form = document.getElementById('contactForm') || document.querySelector('form.contact-form');
+    if (!form) return;
+
+    const submitBtn = form.querySelector('button[type="submit"]') || form.querySelector('input[type="submit"]');
+    const setButtonState = (disabled, text) => {
+        if (submitBtn) {
+            submitBtn.disabled = disabled;
+            if (text) submitBtn.textContent = text;
+        }
+    };
+
+    const showMessage = (msg, isError = false) => {
+        let status = form.querySelector('#formStatus');
+        if (!status) {
+            status = document.createElement('div');
+            status.id = 'formStatus';
+            status.style.marginTop = '0.5rem';
+            form.appendChild(status);
+        }
+        status.textContent = msg;
+        status.style.color = isError ? 'crimson' : 'limegreen';
+    };
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        setButtonState(true, 'Sending...');
+
+        // Collect fields (common names). Adjust selectors if your form uses different names.
+        const name = (form.querySelector('[name="name"]') || {}).value || '';
+        const email = (form.querySelector('[name="email"]') || {}).value || '';
+        const subject = (form.querySelector('[name="subject"]') || {}).value || 'New message from website';
+        const message = (form.querySelector('[name="message"]') || {}).value || '';
+
+        if (!name || !email || !message) {
+            showMessage('Please fill in name, email and message.', true);
+            setButtonState(false, 'Send');
+            return;
+        }
+
+        // Try EmailJS if configured and the library is available
+        const canUseEmailJS = typeof emailjs !== 'undefined' &&
+                              EMAILJS_SERVICE_ID !== 'YOUR_EMAILJS_SERVICE_ID' &&
+                              EMAILJS_TEMPLATE_ID !== 'YOUR_EMAILJS_TEMPLATE_ID';
+
+        if (canUseEmailJS) {
+            try {
+                if (EMAILJS_USER_ID && emailjs.init) {
+                    emailjs.init(EMAILJS_USER_ID);
+                }
+                // Template params should match your EmailJS template variables
+                const templateParams = { from_name: name, from_email: email, subject, message, to_email: TO_EMAIL };
+                await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams);
+                showMessage('Message sent. Thank you!');
+                form.reset();
+            } catch (err) {
+                console.error('EmailJS error:', err);
+                showMessage('Failed to send via EmailJS. Trying fallback...', true);
+                // fallback to mailto below
+            } finally {
+                setButtonState(false, 'Send');
+            }
+            return;
+        }
+
+        // Fallback: open user's mail client via mailto
+        try {
+            const mailSubject = encodeURIComponent(subject);
+            const mailBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+            const mailto = `mailto:${TO_EMAIL}?subject=${mailSubject}&body=${mailBody}`;
+            // Use window.location.href so it opens the mail client
+            window.location.href = mailto;
+            showMessage('Opened mail client.
+
+// END FORM 
