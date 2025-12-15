@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Kumar - Desarrollador Full Stack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="#" class="logo">RK</a>
+            <ul class="nav-links">
+                <li><a href="#sobre-mi" class="nav-link active" data-section="sobre-mi">Sobre Mí</a></li>
+                <li><a href="#experiencia" class="nav-link" data-section="experiencia">Experiencia</a></li>
+                <li><a href="#proyectos" class="nav-link" data-section="proyectos">Proyectos</a></li>
+                <li><a href="#contacto" class="nav-link" data-section="contacto">Contacto</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Disponible para oportunidades profesionales
+                </div>
+                <h1 class="hero-title">
+                    Hola, soy <span class="highlight">Rohit Kumar</span>
+                </h1>
+                <p class="hero-subtitle">Técnico superior en administración de Sistemas | Soporte HelpDesk | Ciberseguridad | Microinformática</p>
+                <p class="hero-description">
+                    Técnico especializado en administración de sistemas y soporte técnico, con sólidos conocimientos en ciberseguridad y microinformática. 
+                    Creo soluciones técnicas robustas que optimizan la infraestructura IT y garantizan la seguridad de los sistemas.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-primary">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        Contactar
+                    </a>
+                    <a href="#proyectos" class="btn btn-secondary">Ver Proyectos</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">1+</div>
+                        <div class="stat-label">Años Experiencia</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Proyectos Completados</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">30+</div>
+                        <div class="stat-label">Clientes Satisfechos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Sobre Mí</h2>
+            <div class="about-content fade-in-up">
+                <div class="about-text">
+                    <p class="lead">
+                        Soy un desarrollador apasionado por crear soluciones tecnológicas que impactan positivamente 
+                        en la vida de las personas.
+                    </p>
+                    <p>
+                        Con más de 5 años de experiencia en desarrollo web, he trabajado en proyectos desde startups 
+                        hasta empresas Fortune 500. Mi enfoque combina creatividad técnica con atención meticulosa 
+                        al detalle, asegurando que cada línea de código contribuya a una experiencia de usuario excepcional.
+                    </p>
+                    <p>
+                        Me especializo en el stack moderno de JavaScript, pero siempre estoy explorando nuevas 
+                        tecnologías y metodologías para mantenerme a la vanguardia del desarrollo web.
+                    </p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Sistemas</h3>
+                        <div class="skills-list">
+                            <span class="skill-badge">Active Directory</span>
+                            <span class="skill-badge">Server</span>
+                            <span class="skill-badge">Aplicaciones</span>
+                            <span class="skill-badge">Base de datos SQL/NO Sql</span>
+                            <span class="skill-badge">Programación Básica</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Pentesting</h3>
+                        <div class="skills-list">
+                            <span class="skill-badge">VulnHub</span>
+                            <span class="skill-badge">MSF</span>
+                            <span class="skill-badge">Autopsy</span>
+                            <span class="skill-badge">NMAP</span>
+                            <span class="skill-badge">Scripting</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">DevOps</h3>
+                        <div class="skills-list">
+                            <span class="skill-badge">Docker</span>
+                            <span class="skill-badge">AWS</span>
+                            <span class="skill-badge">Base44</span>
+                            <span class="skill-badge">Kubernetes</span>
+                            <span class="skill-badge">Vercel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experiencia" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Experiencia</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Técnico Instalador de TPV</h3>
+                            <span class="timeline-date">2025</span>
+                        </div>
+                        <p class="timeline-company">LA CASA DEL PC S.L.</p>
+                        <ul class="timeline-description">
+                            <li>Ejecuté instalaciones y configuraciones de terminales punto de venta (TPV) en entornos empresariales</li>
+                            <li>Dé soporte técnico a usuarios finales</li>
+                            <li>Troubleshooting de problemas técnicos en sistemas TPV</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Hardware</span>
+                            <span class="tag">Sistemas Operativos</span>
+                            <span class="tag">Redes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Soporte técnico</h3>
+                            <span class="timeline-date">2024 - 2025 </span>
+                        </div>
+                        <p class="timeline-company">Serhs Distribució i Logística</p>
+                        <ul class="timeline-description">
+                            <li>Gestion de Aplicaciones</li>
+                            <li>Soporte técnico a más de 500 usuarios</li>
+                            <li>Instalación de software y hardware</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Servicios</span>
+                            <span class="tag">Redes</span>
+                            <span class="tag">HelpDesk</span>
+                            <span class="tag">Monitorización</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Técnico Informático Junior</h3>
+                            <span class="timeline-date">2021 - 2022</span>
+                        </div>
+                        <p class="timeline-company">Ajuntament de Lloret de Mar</p>
+                        <ul class="timeline-description">
+                            <li>Soporte a Usuarios Remotos</li>
+                            <li>Gestion del tráfico de servidores</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">HelpDesk</span>
+                            <span class="tag">SMB</span>
+                            <span class="tag">WYSE/WYPO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyectos" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Proyectos Destacados</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in-up">
+                    <div class="project-image">
+                        <img src="public/modern-dashboard.png" alt="Por favor contacte con speedrkk@gmail.com para más información">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Gestón de Hospital</h3>
+                        <p class="project-description">
+                            Infraestructura de un Hospital Ficticio, gestión de los datos de pacientes medicos, y otras departamentos por unos servidores.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Redes</span>
+                            <span class="tag">Hosting</span>
+                            <span class="tag">WebSocket</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                                </svg>
+                                Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in-up">
+                    <div class="project-image">
+                        <img src="public/e-commerce-product-showcase.jpg" alt="Por favor contacte con speedrkk@gmail.com para más información">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Proyecto Usolutions</h3>
+                        <p class="project-description">
+                            Plataforma de comercio electrónico completa con carrito, pasarela de pagos, gestión 
+                            de inventario y panel de administración.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Stripe</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Tailwind</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                                </svg>
+                                Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in-up">
+                    <div class="project-image">
+                        <img src="public/mobile-app-design-system.jpg" alt="Por favor contacte con speedrkk@gmail.com para más información">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">DoCUmErT</h3>
+                        <p class="project-description">
+                            Aplicación colaborativa de gestión de tareas con tableros kanban, asignación de equipos 
+                            y notificaciones en tiempo real.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Material-UI</span>
+                            <span class="tag">PWA</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                                </svg>
+                                Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Hablemos</h2>
+            <div class="contact-content fade-in-up">
+                <div class="contact-info">
+                    <p class="contact-lead">
+                        Estoy siempre abierto a nuevas oportunidades y colaboraciones interesantes. 
+                        Si tienes un proyecto en mente o simplemente quieres saludar, no dudes en contactarme.
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:rohit.kumar@email.com" class="contact-method">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">speedrkk@gmail.com</div>
+                            </div>
+                        </a>
+                        <a href="tel:+1234567890" class="contact-method">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                            <div>
+                                <div class="contact-label">Teléfono</div>
+                                <div class="contact-value">+1 (234) 567-890</div>
+                            </div>
+                        </a>
+                        <a href="#" class="contact-method">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                            <div>
+                                <div class="contact-label">LinkedIn</div>
+                                <div class="contact-value">/in/rohitkumar</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">© 2025 Rohit Kumar. Todos los derechos reservados.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
