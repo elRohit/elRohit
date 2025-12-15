@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Rohit Kumar - Técnico Informática & Ciberseguridad</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="nav-link">Inicio</a>
+            <a href="#about" class="nav-link">Sobre Mí</a>
+            <a href="#skills" class="nav-link">Habilidades</a>
+            <a href="#projects" class="nav-link">Proyectos</a>
+            <!-- <a href="#documentation" class="nav-link">Documentación</a> -->
+            <a href="#certifications" class="nav-link">Certificaciones</a>
+            <a href="#contact" class="nav-link">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección HOME -->
+        <section id="home" class="hero section">
+            <div class="hero-content">
+                <h1 class="hero-title">¡Hola, soy <span class="highlight">Rohit Kumar</span>!</h1>
+                <p class="hero-subtitle typewrite" data-period="2000" data-type='["Técnico Informático", "Especialista en Redes y Sistemas", "Apasionado por la Ciberseguridad"]'>
+                    <span class="wrap"></span>
+                </p>
+                <a href="#projects" class="btn primary-btn">Ver Proyectos <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-illustration">
+                <canvas id="matrixCanvas"></canvas>
+            </div>
+        </section>
+
+        <!-- Sección SOBRE MÍ -->
+        <section id="about" class="section">
+            <div class="animated-bg"></div> <!-- Nuevo div para fondo animado -->
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Soy un Técnico Informático con una sólida base en <strong>Sistemas Microinformáticos y Redes (SMX)</strong> y <strong>Administración de Sistemas Informáticos en Red (ASIX)</strong>. Actualmente, estoy inmerso en el apasionante mundo de la <strong>Ciberseguridad</strong>, buscando proteger y asegurar entornos digitales.</p>
+                    <p>Mi trayectoria me ha permitido desarrollar una comprensión integral del hardware, software, redes y la importancia crítica de la seguridad. Me entusiasma enfrentar desafíos tecnológicos y aprender continuamente sobre las últimas tendencias y amenazas en el ámbito de la seguridad informática.</p>
+                    <a href="#contact" class="btn secondary-btn">Contactar <i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="about-image">
+                    <img src="images/me.jpg" alt="Tu foto de perfil" class="profile-pic">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección HABILIDADES -->
+        <section id="skills" class="section">
+            <div class="animated-bg"></div> <!-- Nuevo div para fondo animado -->
+            <h2 class="section-title">Mis Habilidades</h2>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Habilidades Técnicas</h3>
+                    <ul class="skills-list">
+                        <li>
+                            <span class="skill-name">Administración Windows / Linux</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                <div class="skill-level" style="width:85%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Configuración de Redes (TCP/IP, VLANs, Routing)</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="skill-level" style="width:90%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Virtualización (VMware, VirtualBox)</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                <div class="skill-level" style="width:80%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Scripting (Bash, PowerShell, Python)</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                <div class="skill-level" style="width:80%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Análisis de Vulnerabilidades y Hardening</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="skill-level" style="width:75%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">SIEM, Wireshark, Nmap, Metasploit</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                <div class="skill-level" style="width:70%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Active Directory y servicios de red</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                <div class="skill-level" style="width:85%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-user-friends"></i> Habilidades Personales</h3>
+                    <ul class="skills-list">
+                        <li>
+                            <span class="skill-name">Comunicación efectiva</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="skill-level" style="width:90%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Trabajo en equipo</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="skill-level" style="width:90%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Resolución de problemas</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                <div class="skill-level" style="width:85%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Capacidad de aprendizaje y adaptación</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="skill-level" style="width:90%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Organización y gestión del tiempo</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                <div class="skill-level" style="width:80%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Atención al detalle</span>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                <div class="skill-level" style="width:85%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección PROYECTOS -->
+        <section id="projects" class="section">
+            <div class="animated-bg"></div> <!-- Nuevo div para fondo animado -->
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="images/usol.jpg" alt="Infraestructura de Hosting Web">
+                    <h3>Infraestructura de Hosting Web</h3>
+                    <p>Implementación y configuración de una empresa ficticia dedicada a oferecer servicios o servidores como Wordpress, Prestashop y Servidores Administrativos con un enfoque en la seguridad y la escalabilidad.</p>
+                    <div class="project-tags"><span>Automatización</span><span>Redes</span><span>Proxmox</span></div>
+                    <a href="https://github.com/elRohit/usolutions.github.io" class="btn project-btn" target="_blank">Ver Detalles <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250/0f2027/ffffff?text=Proyecto+2" alt="Infraestructura Virtual">
+                    <h3>Infraestructura de Hospital</h3>
+                    <p>Montaje y configuración de un entorno de servidores virtualizados para un hospital, incluyendo sistemas de gestión de pacientes y bases de datos seguras.</p>
+                    <div class="project-tags"><span>Virtualización</span><span>Sistemas</span><span>ASIX</span></div>
+                    <a href="https://github.com/elRohit/Project0_GestioHospital" class="btn project-btn" target="_blank">Ver Detalles <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="project-card">
+                    <img src="images/hospital.jpg" alt="Script de Automatización">
+                    <h3>Script de Automatización de Tareas (Dummy)</h3>
+                    <p>Script en Python para automatizar la gestión de usuarios en un entorno Linux, incluyendo creación, modificación y eliminación, y generación de informes de actividad.</p>
+                    <div class="project-tags"><span>Scripting</span><span>Python</span><span>Linux</span></div>
+                    <a href="#" class="btn project-btn" target="_blank">Ver Detalles <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección DOCUMENTACIÓN 
+        <section id="documentation" class="section">
+            <div class="animated-bg"></div> 
+            <h2 class="section-title">Mis Manuales y Documentación</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250/0f2027/00bcd4?text=Manual+Instalacion" alt="Manual de Instalación de Servidor">
+                    <h3>Manual de Instalación de Servidor Linux Hardening</h3>
+                    <p>Guía detallada para la instalación segura y endurecimiento de un servidor Linux, cubriendo configuraciones de firewall, SSH y gestión de usuarios.</p>
+                    <div class="project-tags"><span>Ciberseguridad</span><span>Sistemas</span><span>Linux</span></div>
+                    <a href="manuales/manual-instalacion-linux.pdf" class="btn project-btn" target="_blank">Ver Manual <i class="fas fa-file-pdf"></i></a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250/0f2027/00bcd4?text=Guia+Redes" alt="Guía de Configuración de Redes">
+                    <h3>Guía de Configuración de Redes VLANs y VPNs</h3>
+                    <p>Documento exhaustivo sobre el diseño e implementación de redes segmentadas con VLANs y la configuración de túneles VPN para acceso seguro remoto.</p>
+                    <div class="project-tags"><span>Redes</span><span>ASIX</span><span>Seguridad</span></div>
+                    <a href="manuales/guia-redes-vlans-vpns.pdf" class="btn project-btn" target="_blank">Ver Manual <i class="fas fa-file-pdf"></i></a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250/0f2027/00bcd4?text=Informe+Penetration" alt="Informe de Pruebas de Penetración">
+                    <h3>Informe de Pruebas de Penetración Básicas</h3>
+                    <p>Ejemplo de un informe técnico resultado de pruebas de penetración en una pequeña red, incluyendo vulnerabilidades encontradas y recomendaciones.</p>
+                    <div class="project-tags"><span>Ciberseguridad</span><span>Hacking Ético</span><span>Análisis</span></div>
+                    <a href="manuales/informe-pentest.pdf" class="btn project-btn" target="_blank">Ver Informe <i class="fas fa-file-pdf"></i></a>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Nueva Sección CERTIFICACIONES -->
+        <section id="certifications" class="section">
+            <div class="animated-bg"></div>
+            <h2 class="section-title">Certificaciones</h2>
+            <p class="section-subtitle">Certificados obtenidos que demuestran mi formación y especialización.</p>
+
+            <div class="certificates-grid">
+
+                <div class="certificate-card">
+                    <img src="images/fortnitet1.png" alt="Fortinet Certified Associate in Cybersecurity">
+                    <h3>Fortinet Certified Associate in Cybersecurity</h3>
+                    <p class="certificate-meta">Emisor: Fortinet</p>
+                    <p>Certificación que valida conocimientos fundamentales en ciberseguridad y manejo de soluciones Fortinet.</p>
+                    <div class="project-tags"><span>Redes</span><span>Fortinet</span></div>
+                    <a href="certs/Fortinet Certified Associate in Cybersecurity.pdf" class="btn project-btn" target="_blank">Ver Certificado <i class="fas fa-file-pdf"></i></a>
+                </div>
+
+                <div class="certificate-card">
+                    <img src="images/activedir.jpg" alt="Certified Network Technician">
+                    <h3>Administración Avanzada en Windows Server Core 2022. Active Directory</h3>
+                    <p class="certificate-meta">Emisor: Institut Sa Palomera • Fecha: Junio 2024 </p>
+                    <p>Administración de dominios y controladores de dominio, gestión de usuarios y grupos, políticas de grupo (GPO) y autenticación en entornos Windows Server.</p>
+                    <div class="project-tags"><span>Windows Server</span><span>Active Directory</span><span>GPO</span><span>Seguridad</span></div>
+                    <a href="certs/Active_Directory.pdf" class="btn project-btn" target="_blank">Ver Certificado <i class="fas fa-file-pdf"></i></a>
+                </div>
+
+                <div class="certificate-card">
+                    <img src="images/python.png" alt="Programación Básica en Python">
+                    <h3>Programación Básica en Python</h3>
+                    <p class="certificate-meta">Emisor: Institut Sa Palomera • Fecha: Junio 2024 </p>
+                    <p>Curso introductorio sobre los fundamentos de la programación en Python, incluyendo sintaxis básica, estructuras de control y funciones.</p>
+                    <div class="project-tags"><span>Programación</span><span>Python</span></div>
+                    <a href="certs/Python.pdf" class="btn project-btn" target="_blank">Ver Certificado <i class="fas fa-file-pdf"></i></a>
+                </div>
+
+                <div class="certificate-card">
+                    <img src="images/psql.png" alt="Introducción a Administración de base de datos con PostgresQL">
+                    <h3>Introducción a Administración de base de datos con PostgresQL</h3>
+                    <p class="certificate-meta">Emisor: Open Systems • Fecha: Enero 2024 • ID: RKK-LSA-2024-007</p>
+                    <p>Curso introductorio sobre la administración de bases de datos utilizando PostgresQL, incluyendo instalación, configuración y consultas básicas.</p>
+                    <div class="project-tags"><span>Linux</span><span>Sistemas</span></div>
+                    <a href="certs/PostgresQL.pdf" class="btn project-btn" target="_blank">Ver Certificado <i class="fas fa-file-pdf"></i></a>
+                </div>
+
+                <div class="certificate-card">
+                    <img src="images/HTMLCSSXML.jpg" alt="Introducción a HTML, CSS y XML">
+                    <h3>Introducción a HTML, CSS y XML</h3>
+                    <p class="certificate-meta">Emisor: Institut Sa Palomera • Fecha: Junio 2024 </p>
+                    <p>Conceptos básicos de HTML, CSS y XML, incluyendo estructura de documentos, estilos y validación.</p>
+                    <div class="project-tags"><span>Desarrollo Web</span><span>HTML</span><span>CSS</span><span>XML</span></div>
+                    <a href="certs/HTML_CSS_XML.pdf" class="btn project-btn" target="_blank">Ver Certificado <i class="fas fa-file-pdf"></i></a>
+                </div>
+
+                <div class="certificate-card">
+                    <img src="images/wserver.png" alt="Windows System Administration">
+                    <h3>Administración de Sistema Windows</h3>
+                    <p class="certificate-meta">Emisor: Institut Sa Palomera • Fecha: Junio 2022 </p>
+                    <p>Formación completa en instalación, configuración y mantenimiento de sistemas operativos Windows.</p>
+                    <div class="project-tags"><span>Windows</span><span>Sistemas</span></div>
+                    <a href="certs/Sistemas_Windows_avc.pdf" class="btn project-btn" target="_blank">Ver Certificado <i class="fas fa-file-pdf"></i></a>
+            </div>
+
+            <div class="certificate-card">
+                    <img src="images/wserver2.jpg" alt="Windows System Administration">
+                    <h3>Administración Básica de Windows Server Core 2022</h3>
+                    <p class="certificate-meta">Emisor: Institut Sa Palomera • Fecha: Junio 2022 </p>
+                    <p>Formación completa en instalación, configuración y mantenimiento de sistemas operativos Windows Server Core 2022.</p>
+                    <div class="project-tags"><span>Windows</span><span>Sistemas</span></div>
+                    <a href="certs/Basic_Windows_Server_Adm.pdf" class="btn project-btn" target="_blank">Ver Certificado <i class="fas fa-file-pdf"></i></a>
+            </div>
+
+            <div class="certificate-card">
+                    <img src="images/cisco.png" alt="Windows System Administration">
+                    <h3>Administración Avanzada de Redes (CCNA Routing & Switching)</h3>
+                    <p class="certificate-meta">Emisor: Institut Sa Palomera • Fecha: Junio 2024 </p>
+                    <p>Formación completa en diseño, implementación y gestión de redes utilizando el enfoque CCNA Routing & Switching.</p>
+                    <div class="project-tags"><span>Redes</span><span>CCNA</span></div>
+                    <a href="certs/CCNA_Routing_Switching.pdf" class="btn project-btn" target="_blank">Ver Certificado <i class="fas fa-file-pdf"></i></a>
+            </div>
+
+            <div class="certificate-card">
+                    <img src="images/fbandangular.png" alt="Curso de Firebase y Angular">
+                    <h3>Curso de Firebase y Angular</h3>
+                    <p class="certificate-meta">Emisor: OpenWebinars • Fecha: Junio 2024 </p>
+                    <p>Formación completa en diseño, implementación y gestión de aplicaciones web utilizando Firebase y Angular.</p>
+                    <div class="project-tags"><span>Web</span><span>Firebase</span><span>Angular</span></div>
+                    <a href="certs/certificado_curso_de_firebase_y_angular.pdf" class="btn project-btn" target="_blank">Ver Certificado <i class="fas fa-file-pdf"></i></a>
+            </div>
+        </section>
+
+        <!-- Sección CONTACTO -->
+        <section id="contact" class="section">
+            <div class="animated-bg"></div> <!-- Nuevo div para fondo animado -->
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-content">
+                <p>¿Interesado en mi perfil o tienes alguna pregunta? ¡No dudes en contactarme!</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Enviar Mensaje <i class="fas fa-paper-plane"></i></button>
+                </form>
+                <div class="social-links">
+<<<<<<< HEAD
+                    <a href="https://linkedin.com/in/rohitkumar" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://github.com/rohitkumar" target="_blank" aria-label="GitHub"><i class="fab fa-github fa-2x"></i></a>
+=======
+                    <a href="https://linkedin.com/in/rohit-kumar446" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://github.com/elRohit" target="_blank" aria-label="GitHub"><i class="fab fa-github fa-2x"></i></a>
+>>>>>>> b5b0f920ab34bcc6f318c05336613bd447f03e0a
+                    <a href="mailto:speedrkk@gmail.com" aria-label="Email"><i class="fas fa-envelope fa-2x"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Rohit Kumar. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
